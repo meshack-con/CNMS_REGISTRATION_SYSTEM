@@ -142,6 +142,14 @@ with tab2:
 
     df = get_students()
 
+    # -------------------------------------
+    # COUNT — NEW FEATURE ADDED
+    # -------------------------------------
+    st.markdown(
+        f"<h3 style='color:#ffea00;'>Total Students: {len(df)}</h3>",
+        unsafe_allow_html=True
+    )
+
     # SEARCH BAR
     search = st.text_input("Search student by name or course", key="searchbar")
 
